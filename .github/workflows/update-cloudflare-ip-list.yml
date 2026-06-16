@@ -34,32 +34,31 @@ jobs:
         
     - name: Install Playwright browsers
       run: |
-        python -m playwright install
-        
+        python -m playwright install --with-deps
+
     - name: Run script
       run: |
         set -e
         python fetch_cloudflare_ips.py
-        
+
     - name: Set git user
       run: |
         git config --global user.email "tianshideyou@proton.me"
         git config --global user.name "tianshipapa"
+
     - name: Commit and push changes
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        git config --global user.email "tianshideyou@proton.me"
-        git config --global user.name "tianshipapa"
         git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
-        if [ -n "$(git status --porcelain)" ]; then
+        if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
           git add ip.txt
           git commit -m "Automatic update"
           git pull --rebase origin main
           git push
         else
           echo "No changes detected, skipping commit."
-        fi 
+        fi
 
 permissions:
   contents: write 
