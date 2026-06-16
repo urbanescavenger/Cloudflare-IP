@@ -46,7 +46,7 @@ exclude_ips:          # 排除IP列表，支持单个IP和CIDR格式网段
   - "192.168.1.0/24"   # 排除整个网段，CIDR格式 
 allowed_regions:        # 只保留这些地区的IP，使用国家/地区代码（如CN、US、HK、JP等），留空或缺省则不过滤
   - "CN"
- # - "HK"
+  - "SG"
 ip_geo_api: "http://ip-api.com/json/{ip}"   # IP归属地API模板，{ip}会被替换为实际IP 
 auto_detect: true       # 是否自动检测页面类型，设为false则必须显式指定page_type
 xpath_support: true     # 是否支持XPath选择器（除CSS选择器外）
