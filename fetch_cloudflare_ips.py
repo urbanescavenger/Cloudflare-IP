@@ -148,17 +148,37 @@ def extract_ips(text: str, pattern: str) -> List[str]:
     # 使用正则表达式提取所有IP，顺序与原文一致
     return re.findall(pattern, text)
 
+def is_valid_ipv4(ip: str) -> bool:
+    """
+    校验字符串是否为合法IPv4地址。
+    :param ip: IP地址字符串
+    :return: 合法返回True，否则False
+    """
+    try:
+        addr = ipaddress.ip_address(ip)
+        return isinstance(addr, ipaddress.IPv4Address)
+    except ValueError:
+        return False
+
 def save_ips(ip_list: List[str], filename: str) -> None:
     """
-    保存IP列表到文件，保持顺序。
+    保存IP列表到文件，保持顺序，并过滤非法IPv4地址。
     :param ip_list: IP列表
     :param filename: 输出文件名
     """
+    valid_ips = []
+    invalid_count = 0
+    for ip in ip_list:
+        if is_valid_ipv4(ip):
+            valid_ips.append(ip)
+        else:
+            invalid_count += 1
+            logging.warning(f"[VALIDATE] 忽略非法IP: {ip}")
     try:
         with open(filename, 'w', encoding='utf-8') as file:
-            for ip in ip_list:
+            for ip in valid_ips:
                 file.write(ip + '\n')
-        logging.info(f"共保存 {len(ip_list)} 个唯一IP到 {filename}")
+        logging.info(f"共保存 {len(valid_ips)} 个合法IP到 {filename} (过滤 {invalid_count} 个非法IP)")
     except Exception as e:
         logging.error(f"写入文件失败: {filename}，错误: {e}")
 
