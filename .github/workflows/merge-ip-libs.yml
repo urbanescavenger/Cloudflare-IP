@@ -2,14 +2,28 @@ name: Merge IP Libraries
 
 # 把多个第三方 Cloudflare 优选 IP 库合并、归一化成 `IP:PORT#CC`，
 # 让 CFPick 之类的客户端只需要指向本仓库的 raw 链接。
-#   ip_libs.txt      全部候选（含非 Cloudflare 的中转 IP）
-#   ip_libs_cf.txt   只保留 Cloudflare 官方 IPv4 网段（推荐给 CFPick）
+#   ip_libs.txt      全部候选（含非 Cloudflare 的反代/中转 IP）
+#   ip_libs_cf.txt   只保留 Cloudflare 官方 IPv4 网段
 #   ip_libs_stats.json  每次运行的来源统计
+#
+# 调度：GitHub 的 schedule 经常延迟甚至漏跑，所以主循环放在 job 内部——
+# 一次运行连续跑 5.5 小时、每小时合并一次，结束时用 workflow_dispatch
+# 自己触发下一次（与 OCI 抢机 workflow 同一套自链式循环）。
+# schedule 只作为兜底看门狗：每 2 小时检查一次，数据还新鲜就直接退出。
 
 on:
   schedule:
-    - cron: '25 * * * *' # 每小时运行一次
-  workflow_dispatch: # 允许手动触发
+    - cron: '7 */2 * * *' # 看门狗，只在自链断开时接管
+  workflow_dispatch:
+    inputs:
+      force:
+        description: '忽略新鲜度检查（自链调用时传 true）'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+  actions: write
 
 concurrency:
   group: ip-libs
@@ -18,8 +32,7 @@ concurrency:
 jobs:
   merge:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    timeout-minutes: 355
 
     steps:
       - uses: actions/checkout@v4
@@ -29,18 +42,51 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Merge IP libraries
-        run: python merge_ip_libs.py --output-dir .
-
-      - name: Commit and push changes
+      - name: Merge hourly (self-loop)
+        id: loop
+        env:
+          FORCE: ${{ github.event.inputs.force || 'false' }}
         run: |
+          set -euo pipefail
           git config user.email "tianshideyou@proton.me"
           git config user.name "tianshipapa"
-          if [ -z "$(git status --porcelain ip_libs.txt ip_libs_cf.txt ip_libs_stats.json)" ]; then
-            echo "No changes detected, skipping commit."
-            exit 0
+
+          # 看门狗运行：文件在 75 分钟内更新过，说明自链还活着，直接退出。
+          if [ "$FORCE" != "true" ] && [ -f ip_libs_stats.json ]; then
+            last=$(git log -1 --format=%ct -- ip_libs_stats.json 2>/dev/null || echo 0)
+            age=$(( $(date +%s) - last ))
+            if [ "$age" -lt 4500 ]; then
+              echo "ip_libs_stats.json updated ${age}s ago, watchdog exits"
+              exit 0
+            fi
           fi
-          git add ip_libs.txt ip_libs_cf.txt ip_libs_stats.json
-          git commit -m "Auto-merge IP libraries"
-          git pull --rebase origin main
-          git push
+
+          deadline=$(( $(date +%s) + 19800 ))   # 5.5 小时
+          while [ "$(date +%s)" -lt "$deadline" ]; do
+            echo "[$(date -u '+%F %T UTC')] merge start"
+            python merge_ip_libs.py --output-dir .
+
+            if [ -n "$(git status --porcelain ip_libs.txt ip_libs_cf.txt ip_libs_stats.json)" ]; then
+              git add ip_libs.txt ip_libs_cf.txt ip_libs_stats.json
+              git commit -m "Auto-merge IP libraries"
+              git pull --rebase origin main || true
+              git push || { git pull --rebase origin main && git push; }
+            else
+              echo "no changes"
+            fi
+
+            remaining=$(( deadline - $(date +%s) ))
+            [ "$remaining" -le 120 ] && break
+            wait=$(( remaining < 3600 ? remaining : 3600 ))
+            echo "sleep ${wait}s"
+            sleep "$wait"
+          done
+
+          echo "chain=true" >> "$GITHUB_OUTPUT"
+
+      - name: Chain next run
+        if: steps.loop.outputs.chain == 'true'
+        env:
+          # 如果仓库里配了 PAT 就用它（GITHUB_TOKEN 触发 workflow 在部分账号下会被递归保护拦掉）
+          GH_TOKEN: ${{ secrets.CFIP_PAT || secrets.GITHUB_TOKEN }}
+        run: gh workflow run merge-ip-libs.yml --repo "$GITHUB_REPOSITORY" -f force=true
