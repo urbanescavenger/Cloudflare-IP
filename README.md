@@ -80,3 +80,19 @@ ip_geo_api: "http://ip-api.com/json/{ip}"   # IP归属地API模板，{ip}会被�
 - 如需扩展更多 JS 动态页面抓取，可参考 fetch_js_ips 函数实现
 
 如有建议或问题欢迎反馈！
+
+## 多库合并（ip_libs.txt / ip_libs_cf.txt）
+
+`.github/workflows/merge-ip-libs.yml` 每 2 小时把多个第三方优选 IP 库抓下来，归一化成统一的 `IP:PORT#CC` 格式后提交回本仓库：
+
+- `ip_libs.txt`：全部候选，包含非 Cloudflare 的反代/中转 IP
+- `ip_libs_cf.txt`：只保留 Cloudflare 官方 IPv4 网段内的地址
+- `ip_libs_stats.json`：本次运行的来源统计（每个源抓到多少条、多少条在 CF 网段）
+
+数据源见 `merge_ip_libs.py` 里的 `SOURCES`：CM(zip.cm.edu.kg)、LancelotRar、HandsomeMJZ（含镜像）、joname1/BestCFip、DustinWin/BestCF（移动/联通/电信）、svip-s、IPDB、HostMonit、VPS789。
+
+脚本只依赖 Python 标准库，本地也能直接跑：
+
+```bash
+python merge_ip_libs.py --output-dir .
+```

@@ -1,0 +1,46 @@
+name: Merge IP Libraries
+
+# 把多个第三方 Cloudflare 优选 IP 库合并、归一化成 `IP:PORT#CC`，
+# 让 CFPick 之类的客户端只需要指向本仓库的 raw 链接。
+#   ip_libs.txt      全部候选（含非 Cloudflare 的中转 IP）
+#   ip_libs_cf.txt   只保留 Cloudflare 官方 IPv4 网段（推荐给 CFPick）
+#   ip_libs_stats.json  每次运行的来源统计
+
+on:
+  schedule:
+    - cron: '25 */2 * * *' # 每 2 小时运行一次
+  workflow_dispatch: # 允许手动触发
+
+concurrency:
+  group: ip-libs
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Merge IP libraries
+        run: python merge_ip_libs.py --output-dir .
+
+      - name: Commit and push changes
+        run: |
+          git config user.email "tianshideyou@proton.me"
+          git config user.name "tianshipapa"
+          if [ -z "$(git status --porcelain ip_libs.txt ip_libs_cf.txt ip_libs_stats.json)" ]; then
+            echo "No changes detected, skipping commit."
+            exit 0
+          fi
+          git add ip_libs.txt ip_libs_cf.txt ip_libs_stats.json
+          git commit -m "Auto-merge IP libraries"
+          git pull --rebase origin main
+          git push
