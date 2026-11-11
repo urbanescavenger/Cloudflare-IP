@@ -83,7 +83,7 @@ ip_geo_api: "http://ip-api.com/json/{ip}"   # IP归属地API模板，{ip}会被�
 
 ## 多库合并（ip_libs.txt / ip_libs_cf.txt）
 
-`.github/workflows/merge-ip-libs.yml` 每 2 小时把多个第三方优选 IP 库抓下来，归一化成统一的 `IP:PORT#CC` 格式后提交回本仓库：
+`.github/workflows/merge-ip-libs.yml` 每小时把多个第三方优选 IP 库抓下来，归一化成统一的 `IP:PORT#CC` 格式后提交回本仓库：
 
 - `ip_libs.txt`：全部候选，包含非 Cloudflare 的反代/中转 IP
 - `ip_libs_cf.txt`：只保留 Cloudflare 官方 IPv4 网段内的地址

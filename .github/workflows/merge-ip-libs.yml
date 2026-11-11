@@ -8,7 +8,7 @@ name: Merge IP Libraries
 
 on:
   schedule:
-    - cron: '25 */2 * * *' # 每 2 小时运行一次
+    - cron: '25 * * * *' # 每小时运行一次
   workflow_dispatch: # 允许手动触发
 
 concurrency:
