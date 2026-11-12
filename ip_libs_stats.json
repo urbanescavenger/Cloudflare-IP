@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-12T05:32:14+00:00",
+  "updated": "2026-11-12T06:01:50+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
       "url": "https://zip.cm.edu.kg/all.txt",
-      "count": 13489,
-      "added": 13489,
+      "count": 13355,
+      "added": 13355,
       "cloudflare_count": 0
     },
     {
@@ -19,14 +19,14 @@
       "name": "HandsomeMJZ full",
       "url": "https://raw.githubusercontent.com/HandsomeMJZ/cfip/main/full_ips.txt",
       "count": 511,
-      "added": 340,
+      "added": 344,
       "cloudflare_count": 0
     },
     {
       "name": "HandsomeMJZ (mirror)",
       "url": "https://cf.junzhen.qzz.io/full_ips.txt",
       "count": 554,
-      "added": 219,
+      "added": 221,
       "cloudflare_count": 0
     },
     {
@@ -68,7 +68,7 @@
       "name": "svip-s (陕西移动)",
       "url": "https://ips.gaoji.uk/best_ips.txt",
       "count": 36,
-      "added": 0,
+      "added": 1,
       "cloudflare_count": 0
     },
     {
@@ -96,18 +96,18 @@
       "name": "VPS789",
       "url": "https://vps789.com/openApi/cfIpApi",
       "count": 20,
-      "added": 14,
+      "added": 10,
       "cloudflare_count": 20
     }
   ],
-  "total": 14436,
-  "cloudflare_total": 384,
+  "total": 14305,
+  "cloudflare_total": 380,
   "by_port": {
-    "443": 384
+    "443": 380
   },
   "by_region": {
     "US": 260,
-    "XX": 88,
+    "XX": 84,
     "SG": 28,
     "CF": 7,
     "JP": 1
