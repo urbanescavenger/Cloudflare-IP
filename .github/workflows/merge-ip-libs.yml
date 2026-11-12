@@ -9,11 +9,14 @@ name: Merge IP Libraries
 # 调度：GitHub 的 schedule 经常延迟甚至漏跑，所以主循环放在 job 内部——
 # 一次运行连续跑 5.5 小时、每小时合并一次，结束时用 workflow_dispatch
 # 自己触发下一次（与 OCI 抢机 workflow 同一套自链式循环）。
-# schedule 只作为兜底看门狗：每 2 小时检查一次，数据还新鲜就直接退出。
+# schedule 只作为兜底看门狗：每小时检查一次，数据还新鲜就直接退出。
 
 on:
   schedule:
-    - cron: '7 */2 * * *' # 看门狗，只在自链断开时接管
+    # 看门狗：每小时醒一次，数据新鲜就立刻退出（约 20 秒），只在自链断开时接管。
+    # 2026-11-12 实测：跑满 5 小时的 runner 被回收后，2 小时看门狗隔了 4 小时才补上，
+    # 改每小时一次缩短空窗。
+    - cron: '7 * * * *'
   workflow_dispatch:
     inputs:
       force:
