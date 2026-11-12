@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T20:34:17+00:00",
+  "updated": "2026-11-12T00:31:43+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
@@ -13,7 +13,7 @@
       "url": "https://raw.githubusercontent.com/LancelotRar/best-cf-ips/main/best-cf-ip-scanned-top200.txt",
       "count": 200,
       "added": 200,
-      "cloudflare_count": 198
+      "cloudflare_count": 199
     },
     {
       "name": "HandsomeMJZ full",
@@ -32,37 +32,37 @@
     {
       "name": "joname1 BestCFip v4",
       "url": "https://raw.githubusercontent.com/joname1/BestCFip/main/ipv4.txt",
-      "count": 99,
-      "added": 99,
-      "cloudflare_count": 98
+      "count": 91,
+      "added": 91,
+      "cloudflare_count": 90
     },
     {
       "name": "DustinWin bestcf",
       "url": "https://raw.githubusercontent.com/DustinWin/BestCF/bestcf/bestcf-ip.txt",
-      "count": 9,
-      "added": 9,
-      "cloudflare_count": 9
+      "count": 7,
+      "added": 7,
+      "cloudflare_count": 7
     },
     {
       "name": "DustinWin 移动",
       "url": "https://raw.githubusercontent.com/DustinWin/BestCF/bestcf/cmcc-ip.txt",
-      "count": 18,
-      "added": 18,
-      "cloudflare_count": 18
+      "count": 23,
+      "added": 23,
+      "cloudflare_count": 23
     },
     {
       "name": "DustinWin 联通",
       "url": "https://raw.githubusercontent.com/DustinWin/BestCF/bestcf/cucc-ip.txt",
-      "count": 14,
-      "added": 9,
-      "cloudflare_count": 14
+      "count": 19,
+      "added": 13,
+      "cloudflare_count": 19
     },
     {
       "name": "DustinWin 电信",
       "url": "https://raw.githubusercontent.com/DustinWin/BestCF/bestcf/ctcc-ip.txt",
-      "count": 16,
-      "added": 15,
-      "cloudflare_count": 14
+      "count": 21,
+      "added": 20,
+      "cloudflare_count": 19
     },
     {
       "name": "svip-s (陕西移动)",
@@ -96,23 +96,20 @@
       "name": "VPS789",
       "url": "https://vps789.com/openApi/cfIpApi",
       "count": 20,
-      "added": 12,
+      "added": 10,
       "cloudflare_count": 20
     }
   ],
-  "total": 14430,
-  "cloudflare_total": 377,
+  "total": 14432,
+  "cloudflare_total": 380,
   "by_port": {
-    "443": 377
+    "443": 380
   },
   "by_region": {
-    "US": 262,
-    "XX": 72,
-    "SG": 13,
-    "DE": 13,
-    "CF": 9,
-    "NL": 4,
-    "GB": 3,
-    "CZ": 1
+    "US": 260,
+    "XX": 84,
+    "SG": 28,
+    "CF": 7,
+    "JP": 1
   }
 }
