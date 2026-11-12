@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T02:31:56+00:00",
+  "updated": "2026-11-12T03:32:02+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
@@ -96,18 +96,18 @@
       "name": "VPS789",
       "url": "https://vps789.com/openApi/cfIpApi",
       "count": 20,
-      "added": 9,
+      "added": 10,
       "cloudflare_count": 20
     }
   ],
-  "total": 14431,
-  "cloudflare_total": 379,
+  "total": 14432,
+  "cloudflare_total": 380,
   "by_port": {
-    "443": 379
+    "443": 380
   },
   "by_region": {
     "US": 260,
-    "XX": 83,
+    "XX": 84,
     "SG": 28,
     "CF": 7,
     "JP": 1
