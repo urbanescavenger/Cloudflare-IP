@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T22:08:44+00:00",
+  "updated": "2026-11-12T23:08:51+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
@@ -39,9 +39,9 @@
     {
       "name": "DustinWin bestcf",
       "url": "https://raw.githubusercontent.com/DustinWin/BestCF/bestcf/bestcf-ip.txt",
-      "count": 6,
-      "added": 6,
-      "cloudflare_count": 6
+      "count": 11,
+      "added": 11,
+      "cloudflare_count": 11
     },
     {
       "name": "DustinWin 移动",
@@ -54,14 +54,14 @@
       "name": "DustinWin 联通",
       "url": "https://raw.githubusercontent.com/DustinWin/BestCF/bestcf/cucc-ip.txt",
       "count": 19,
-      "added": 13,
+      "added": 14,
       "cloudflare_count": 19
     },
     {
       "name": "DustinWin 电信",
       "url": "https://raw.githubusercontent.com/DustinWin/BestCF/bestcf/ctcc-ip.txt",
       "count": 21,
-      "added": 21,
+      "added": 20,
       "cloudflare_count": 19
     },
     {
@@ -96,21 +96,21 @@
       "name": "VPS789",
       "url": "https://vps789.com/openApi/cfIpApi",
       "count": 20,
-      "added": 13,
+      "added": 10,
       "cloudflare_count": 20
     }
   ],
-  "total": 14312,
-  "cloudflare_total": 389,
+  "total": 14314,
+  "cloudflare_total": 391,
   "by_port": {
-    "443": 389
+    "443": 391
   },
   "by_region": {
-    "US": 267,
-    "XX": 88,
+    "US": 265,
+    "XX": 85,
     "SG": 26,
-    "CF": 6,
-    "JP": 1,
-    "DE": 1
+    "CF": 11,
+    "AT": 3,
+    "JP": 1
   }
 }
