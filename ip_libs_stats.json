@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-14T02:55:06+00:00",
+  "updated": "2026-11-14T10:05:20+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
       "url": "https://zip.cm.edu.kg/all.txt",
-      "count": 13247,
-      "added": 13247,
+      "count": 13130,
+      "added": 13130,
       "cloudflare_count": 0
     },
     {
@@ -19,7 +19,7 @@
       "name": "HandsomeMJZ full",
       "url": "https://raw.githubusercontent.com/HandsomeMJZ/cfip/main/full_ips.txt",
       "count": 511,
-      "added": 344,
+      "added": 347,
       "cloudflare_count": 0
     },
     {
@@ -96,18 +96,18 @@
       "name": "VPS789",
       "url": "https://vps789.com/openApi/cfIpApi",
       "count": 20,
-      "added": 14,
+      "added": 13,
       "cloudflare_count": 20
     }
   ],
-  "total": 14222,
-  "cloudflare_total": 408,
+  "total": 14107,
+  "cloudflare_total": 407,
   "by_port": {
-    "443": 408
+    "443": 407
   },
   "by_region": {
     "US": 278,
-    "XX": 89,
+    "XX": 88,
     "SG": 29,
     "CF": 11,
     "JP": 1
