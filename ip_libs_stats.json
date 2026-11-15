@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T14:10:40+00:00",
+  "updated": "2026-11-15T16:57:08+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
@@ -32,9 +32,9 @@
     {
       "name": "joname1 BestCFip v4",
       "url": "https://raw.githubusercontent.com/joname1/BestCFip/main/ipv4.txt",
-      "count": 107,
-      "added": 107,
-      "cloudflare_count": 106
+      "count": 103,
+      "added": 103,
+      "cloudflare_count": 102
     },
     {
       "name": "DustinWin bestcf",
@@ -89,7 +89,7 @@
       "name": "HostMonit",
       "url": "https://api.hostmonit.com/get_optimization_ip",
       "count": 15,
-      "added": 4,
+      "added": 9,
       "cloudflare_count": 15
     },
     {
@@ -100,14 +100,14 @@
       "cloudflare_count": 20
     }
   ],
-  "total": 13974,
-  "cloudflare_total": 398,
+  "total": 13975,
+  "cloudflare_total": 399,
   "by_port": {
-    "443": 398
+    "443": 399
   },
   "by_region": {
-    "US": 280,
-    "XX": 82,
+    "US": 276,
+    "XX": 87,
     "SG": 25,
     "CF": 11
   }
