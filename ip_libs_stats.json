@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-15T04:33:58+00:00",
+  "updated": "2026-11-15T05:34:06+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
       "url": "https://zip.cm.edu.kg/all.txt",
-      "count": 13130,
-      "added": 13130,
+      "count": 13000,
+      "added": 13000,
       "cloudflare_count": 0
     },
     {
@@ -19,22 +19,22 @@
       "name": "HandsomeMJZ full",
       "url": "https://raw.githubusercontent.com/HandsomeMJZ/cfip/main/full_ips.txt",
       "count": 511,
-      "added": 347,
+      "added": 350,
       "cloudflare_count": 0
     },
     {
       "name": "HandsomeMJZ (mirror)",
       "url": "https://cf.junzhen.qzz.io/full_ips.txt",
       "count": 554,
-      "added": 220,
+      "added": 222,
       "cloudflare_count": 0
     },
     {
       "name": "joname1 BestCFip v4",
       "url": "https://raw.githubusercontent.com/joname1/BestCFip/main/ipv4.txt",
-      "count": 108,
-      "added": 108,
-      "cloudflare_count": 107
+      "count": 107,
+      "added": 107,
+      "cloudflare_count": 106
     },
     {
       "name": "DustinWin bestcf",
@@ -68,7 +68,7 @@
       "name": "svip-s (陕西移动)",
       "url": "https://ips.gaoji.uk/best_ips.txt",
       "count": 37,
-      "added": 0,
+      "added": 1,
       "cloudflare_count": 0
     },
     {
@@ -96,18 +96,18 @@
       "name": "VPS789",
       "url": "https://vps789.com/openApi/cfIpApi",
       "count": 20,
-      "added": 12,
+      "added": 7,
       "cloudflare_count": 20
     }
   ],
-  "total": 14103,
-  "cloudflare_total": 402,
+  "total": 13973,
+  "cloudflare_total": 396,
   "by_port": {
-    "443": 402
+    "443": 396
   },
   "by_region": {
-    "US": 282,
-    "XX": 85,
+    "US": 281,
+    "XX": 80,
     "SG": 22,
     "CF": 11,
     "JP": 1,
