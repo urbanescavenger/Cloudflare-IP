@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T14:28:07+00:00",
+  "updated": "2026-11-16T20:16:44+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
@@ -32,9 +32,9 @@
     {
       "name": "joname1 BestCFip v4",
       "url": "https://raw.githubusercontent.com/joname1/BestCFip/main/ipv4.txt",
-      "count": 107,
-      "added": 107,
-      "cloudflare_count": 106
+      "count": 99,
+      "added": 99,
+      "cloudflare_count": 98
     },
     {
       "name": "DustinWin bestcf",
@@ -67,7 +67,7 @@
     {
       "name": "svip-s (陕西移动)",
       "url": "https://ips.gaoji.uk/best_ips.txt",
-      "count": 36,
+      "count": 42,
       "added": 0,
       "cloudflare_count": 0
     },
@@ -89,25 +89,25 @@
       "name": "HostMonit",
       "url": "https://api.hostmonit.com/get_optimization_ip",
       "count": 15,
-      "added": 6,
+      "added": 10,
       "cloudflare_count": 15
     },
     {
       "name": "VPS789",
       "url": "https://vps789.com/openApi/cfIpApi",
       "count": 20,
-      "added": 11,
+      "added": 13,
       "cloudflare_count": 20
     }
   ],
-  "total": 13843,
-  "cloudflare_total": 392,
+  "total": 13841,
+  "cloudflare_total": 390,
   "by_port": {
-    "443": 392
+    "443": 390
   },
   "by_region": {
-    "US": 276,
-    "XX": 80,
+    "US": 268,
+    "XX": 86,
     "SG": 28,
     "CF": 7,
     "GB": 1
