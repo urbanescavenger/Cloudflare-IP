@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T03:40:16+00:00",
+  "updated": "2026-11-17T04:40:24+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
@@ -89,14 +89,14 @@
       "name": "HostMonit",
       "url": "https://api.hostmonit.com/get_optimization_ip",
       "count": 15,
-      "added": 8,
+      "added": 10,
       "cloudflare_count": 15
     },
     {
       "name": "VPS789",
       "url": "https://vps789.com/openApi/cfIpApi",
       "count": 20,
-      "added": 16,
+      "added": 14,
       "cloudflare_count": 20
     }
   ],
