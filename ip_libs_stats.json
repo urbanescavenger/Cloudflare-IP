@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T00:17:13+00:00",
+  "updated": "2026-11-17T01:17:20+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
@@ -13,7 +13,7 @@
       "url": "https://raw.githubusercontent.com/LancelotRar/best-cf-ips/main/best-cf-ip-scanned-top200.txt",
       "count": 200,
       "added": 200,
-      "cloudflare_count": 199
+      "cloudflare_count": 198
     },
     {
       "name": "HandsomeMJZ full",
@@ -89,7 +89,7 @@
       "name": "HostMonit",
       "url": "https://api.hostmonit.com/get_optimization_ip",
       "count": 15,
-      "added": 0,
+      "added": 6,
       "cloudflare_count": 15
     },
     {
@@ -100,16 +100,18 @@
       "cloudflare_count": 20
     }
   ],
-  "total": 13822,
-  "cloudflare_total": 371,
+  "total": 13828,
+  "cloudflare_total": 376,
   "by_port": {
-    "443": 371
+    "443": 376
   },
   "by_region": {
-    "US": 268,
-    "XX": 63,
-    "SG": 28,
+    "US": 172,
+    "XX": 69,
+    "DE": 57,
+    "NL": 41,
+    "SG": 25,
     "CF": 11,
-    "GB": 1
+    "JP": 1
   }
 }
