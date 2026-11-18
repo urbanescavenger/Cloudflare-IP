@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T17:56:01+00:00",
+  "updated": "2026-11-18T21:19:40+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
@@ -67,7 +67,7 @@
     {
       "name": "svip-s (陕西移动)",
       "url": "https://ips.gaoji.uk/best_ips.txt",
-      "count": 26,
+      "count": 25,
       "added": 0,
       "cloudflare_count": 0
     },
