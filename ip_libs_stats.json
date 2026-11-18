@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T13:55:32+00:00",
+  "updated": "2026-11-18T14:55:40+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
@@ -89,7 +89,7 @@
       "name": "HostMonit",
       "url": "https://api.hostmonit.com/get_optimization_ip",
       "count": 15,
-      "added": 3,
+      "added": 6,
       "cloudflare_count": 15
     },
     {
@@ -100,14 +100,14 @@
       "cloudflare_count": 20
     }
   ],
-  "total": 13534,
-  "cloudflare_total": 383,
+  "total": 13537,
+  "cloudflare_total": 386,
   "by_port": {
-    "443": 383
+    "443": 386
   },
   "by_region": {
     "US": 271,
-    "XX": 77,
+    "XX": 80,
     "SG": 28,
     "CF": 7
   }
