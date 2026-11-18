@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-18T05:36:54+00:00",
+  "updated": "2026-11-18T06:37:01+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
       "url": "https://zip.cm.edu.kg/all.txt",
-      "count": 12757,
-      "added": 12757,
+      "count": 12566,
+      "added": 12566,
       "cloudflare_count": 0
     },
     {
@@ -19,22 +19,22 @@
       "name": "HandsomeMJZ full",
       "url": "https://raw.githubusercontent.com/HandsomeMJZ/cfip/main/full_ips.txt",
       "count": 511,
-      "added": 349,
+      "added": 353,
       "cloudflare_count": 0
     },
     {
       "name": "HandsomeMJZ (mirror)",
       "url": "https://cf.junzhen.qzz.io/full_ips.txt",
       "count": 554,
-      "added": 226,
+      "added": 229,
       "cloudflare_count": 0
     },
     {
       "name": "joname1 BestCFip v4",
       "url": "https://raw.githubusercontent.com/joname1/BestCFip/main/ipv4.txt",
-      "count": 101,
-      "added": 101,
-      "cloudflare_count": 100
+      "count": 100,
+      "added": 100,
+      "cloudflare_count": 99
     },
     {
       "name": "DustinWin bestcf",
@@ -96,18 +96,18 @@
       "name": "VPS789",
       "url": "https://vps789.com/openApi/cfIpApi",
       "count": 20,
-      "added": 12,
+      "added": 9,
       "cloudflare_count": 20
     }
   ],
-  "total": 13731,
-  "cloudflare_total": 396,
+  "total": 13543,
+  "cloudflare_total": 392,
   "by_port": {
-    "443": 396
+    "443": 392
   },
   "by_region": {
-    "US": 275,
-    "XX": 86,
+    "US": 274,
+    "XX": 83,
     "SG": 25,
     "CF": 10
   }
