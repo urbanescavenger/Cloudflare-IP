@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T22:22:18+00:00",
+  "updated": "2026-11-19T23:22:25+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
@@ -13,7 +13,7 @@
       "url": "https://raw.githubusercontent.com/LancelotRar/best-cf-ips/main/best-cf-ip-scanned-top200.txt",
       "count": 200,
       "added": 200,
-      "cloudflare_count": 199
+      "cloudflare_count": 200
     },
     {
       "name": "HandsomeMJZ full",
@@ -32,16 +32,16 @@
     {
       "name": "joname1 BestCFip v4",
       "url": "https://raw.githubusercontent.com/joname1/BestCFip/main/ipv4.txt",
-      "count": 99,
-      "added": 99,
-      "cloudflare_count": 98
+      "count": 98,
+      "added": 98,
+      "cloudflare_count": 97
     },
     {
       "name": "DustinWin bestcf",
       "url": "https://raw.githubusercontent.com/DustinWin/BestCF/bestcf/bestcf-ip.txt",
-      "count": 10,
-      "added": 10,
-      "cloudflare_count": 10
+      "count": 12,
+      "added": 12,
+      "cloudflare_count": 12
     },
     {
       "name": "DustinWin 移动",
@@ -89,7 +89,7 @@
       "name": "HostMonit",
       "url": "https://api.hostmonit.com/get_optimization_ip",
       "count": 15,
-      "added": 10,
+      "added": 0,
       "cloudflare_count": 15
     },
     {
@@ -100,19 +100,16 @@
       "cloudflare_count": 20
     }
   ],
-  "total": 13452,
-  "cloudflare_total": 391,
+  "total": 13443,
+  "cloudflare_total": 383,
   "by_port": {
-    "443": 391
+    "443": 383
   },
   "by_region": {
     "US": 272,
-    "XX": 84,
-    "SG": 18,
-    "CF": 10,
-    "DE": 4,
-    "GB": 1,
-    "AT": 1,
-    "NL": 1
+    "XX": 74,
+    "SG": 24,
+    "CF": 12,
+    "DE": 1
   }
 }
