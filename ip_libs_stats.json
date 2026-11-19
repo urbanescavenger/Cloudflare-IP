@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-19T06:10:19+00:00",
+  "updated": "2026-11-19T07:10:27+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
       "url": "https://zip.cm.edu.kg/all.txt",
-      "count": 12566,
-      "added": 12566,
+      "count": 12475,
+      "added": 12475,
       "cloudflare_count": 0
     },
     {
@@ -19,14 +19,14 @@
       "name": "HandsomeMJZ full",
       "url": "https://raw.githubusercontent.com/HandsomeMJZ/cfip/main/full_ips.txt",
       "count": 511,
-      "added": 353,
+      "added": 352,
       "cloudflare_count": 0
     },
     {
       "name": "HandsomeMJZ (mirror)",
       "url": "https://cf.junzhen.qzz.io/full_ips.txt",
       "count": 554,
-      "added": 229,
+      "added": 230,
       "cloudflare_count": 0
     },
     {
@@ -68,7 +68,7 @@
       "name": "svip-s (陕西移动)",
       "url": "https://ips.gaoji.uk/best_ips.txt",
       "count": 25,
-      "added": 0,
+      "added": 1,
       "cloudflare_count": 0
     },
     {
@@ -100,7 +100,7 @@
       "cloudflare_count": 20
     }
   ],
-  "total": 13551,
+  "total": 13461,
   "cloudflare_total": 400,
   "by_port": {
     "443": 400
