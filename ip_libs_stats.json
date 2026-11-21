@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T13:36:06+00:00",
+  "updated": "2026-11-21T14:36:13+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
@@ -89,25 +89,25 @@
       "name": "HostMonit",
       "url": "https://api.hostmonit.com/get_optimization_ip",
       "count": 15,
-      "added": 4,
+      "added": 6,
       "cloudflare_count": 15
     },
     {
       "name": "VPS789",
       "url": "https://vps789.com/openApi/cfIpApi",
       "count": 20,
-      "added": 11,
+      "added": 15,
       "cloudflare_count": 20
     }
   ],
-  "total": 13000,
-  "cloudflare_total": 389,
+  "total": 13006,
+  "cloudflare_total": 395,
   "by_port": {
-    "443": 389
+    "443": 395
   },
   "by_region": {
     "US": 272,
-    "XX": 81,
+    "XX": 87,
     "SG": 26,
     "CF": 8,
     "JP": 1,
