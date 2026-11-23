@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T13:53:31+00:00",
+  "updated": "2026-11-23T21:12:02+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
@@ -13,7 +13,7 @@
       "url": "https://raw.githubusercontent.com/LancelotRar/best-cf-ips/main/best-cf-ip-scanned-top200.txt",
       "count": 200,
       "added": 200,
-      "cloudflare_count": 199
+      "cloudflare_count": 200
     },
     {
       "name": "HandsomeMJZ full",
@@ -32,16 +32,16 @@
     {
       "name": "joname1 BestCFip v4",
       "url": "https://raw.githubusercontent.com/joname1/BestCFip/main/ipv4.txt",
-      "count": 102,
-      "added": 102,
-      "cloudflare_count": 101
+      "count": 101,
+      "added": 101,
+      "cloudflare_count": 100
     },
     {
       "name": "DustinWin bestcf",
       "url": "https://raw.githubusercontent.com/DustinWin/BestCF/bestcf/bestcf-ip.txt",
-      "count": 8,
-      "added": 8,
-      "cloudflare_count": 8
+      "count": 6,
+      "added": 6,
+      "cloudflare_count": 6
     },
     {
       "name": "DustinWin 移动",
@@ -54,7 +54,7 @@
       "name": "DustinWin 联通",
       "url": "https://raw.githubusercontent.com/DustinWin/BestCF/bestcf/cucc-ip.txt",
       "count": 19,
-      "added": 12,
+      "added": 13,
       "cloudflare_count": 19
     },
     {
@@ -67,8 +67,8 @@
     {
       "name": "svip-s (陕西移动)",
       "url": "https://ips.gaoji.uk/best_ips.txt",
-      "count": 32,
-      "added": 3,
+      "count": 37,
+      "added": 0,
       "cloudflare_count": 0
     },
     {
@@ -89,7 +89,7 @@
       "name": "HostMonit",
       "url": "https://api.hostmonit.com/get_optimization_ip",
       "count": 15,
-      "added": 5,
+      "added": 0,
       "cloudflare_count": 15
     },
     {
@@ -100,17 +100,16 @@
       "cloudflare_count": 20
     }
   ],
-  "total": 13115,
-  "cloudflare_total": 387,
+  "total": 13105,
+  "cloudflare_total": 381,
   "by_port": {
-    "443": 387
+    "443": 381
   },
   "by_region": {
-    "US": 193,
-    "XX": 79,
-    "DE": 50,
-    "NL": 29,
-    "SG": 28,
-    "CF": 8
+    "US": 297,
+    "XX": 75,
+    "CF": 6,
+    "SG": 2,
+    "AT": 1
   }
 }
