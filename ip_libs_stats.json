@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T02:10:44+00:00",
+  "updated": "2026-11-23T03:10:50+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
@@ -13,7 +13,7 @@
       "url": "https://raw.githubusercontent.com/LancelotRar/best-cf-ips/main/best-cf-ip-scanned-top200.txt",
       "count": 200,
       "added": 200,
-      "cloudflare_count": 200
+      "cloudflare_count": 199
     },
     {
       "name": "HandsomeMJZ full",
@@ -96,22 +96,21 @@
       "name": "VPS789",
       "url": "https://vps789.com/openApi/cfIpApi",
       "count": 20,
-      "added": 9,
+      "added": 12,
       "cloudflare_count": 20
     }
   ],
-  "total": 13152,
-  "cloudflare_total": 382,
+  "total": 13155,
+  "cloudflare_total": 384,
   "by_port": {
-    "443": 382
+    "443": 384
   },
   "by_region": {
-    "US": 269,
-    "XX": 77,
-    "SG": 25,
-    "CF": 8,
-    "JP": 1,
-    "DE": 1,
-    "FR": 1
+    "US": 189,
+    "XX": 80,
+    "DE": 50,
+    "NL": 29,
+    "SG": 28,
+    "CF": 8
   }
 }
