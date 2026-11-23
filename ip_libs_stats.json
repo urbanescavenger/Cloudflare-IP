@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T01:10:37+00:00",
+  "updated": "2026-11-23T02:10:44+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
@@ -75,7 +75,7 @@
       "name": "IPDB bestcf v4",
       "url": "https://raw.githubusercontent.com/ymyuuu/IPDB/main/BestCF/bestcfv4.txt",
       "count": 10,
-      "added": 9,
+      "added": 10,
       "cloudflare_count": 10
     },
     {
@@ -96,18 +96,18 @@
       "name": "VPS789",
       "url": "https://vps789.com/openApi/cfIpApi",
       "count": 20,
-      "added": 12,
+      "added": 9,
       "cloudflare_count": 20
     }
   ],
-  "total": 13154,
-  "cloudflare_total": 384,
+  "total": 13152,
+  "cloudflare_total": 382,
   "by_port": {
-    "443": 384
+    "443": 382
   },
   "by_region": {
     "US": 269,
-    "XX": 79,
+    "XX": 77,
     "SG": 25,
     "CF": 8,
     "JP": 1,
