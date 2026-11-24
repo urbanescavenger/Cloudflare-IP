@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T17:28:38+00:00",
+  "updated": "2026-11-24T18:28:46+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
@@ -67,8 +67,8 @@
     {
       "name": "svip-s (陕西移动)",
       "url": "https://ips.gaoji.uk/best_ips.txt",
-      "count": 37,
-      "added": 0,
+      "count": 47,
+      "added": 4,
       "cloudflare_count": 0
     },
     {
@@ -96,18 +96,18 @@
       "name": "VPS789",
       "url": "https://vps789.com/openApi/cfIpApi",
       "count": 20,
-      "added": 14,
+      "added": 12,
       "cloudflare_count": 20
     }
   ],
-  "total": 12929,
-  "cloudflare_total": 382,
+  "total": 12931,
+  "cloudflare_total": 380,
   "by_port": {
-    "443": 382
+    "443": 380
   },
   "by_region": {
     "US": 285,
-    "XX": 78,
+    "XX": 76,
     "SG": 10,
     "CF": 7,
     "DE": 2
