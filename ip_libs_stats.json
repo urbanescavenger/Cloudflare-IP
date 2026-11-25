@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T22:29:18+00:00",
+  "updated": "2026-11-25T02:14:31+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
@@ -39,9 +39,9 @@
     {
       "name": "DustinWin bestcf",
       "url": "https://raw.githubusercontent.com/DustinWin/BestCF/bestcf/bestcf-ip.txt",
-      "count": 7,
-      "added": 7,
-      "cloudflare_count": 7
+      "count": 12,
+      "added": 12,
+      "cloudflare_count": 12
     },
     {
       "name": "DustinWin 移动",
@@ -89,27 +89,27 @@
       "name": "HostMonit",
       "url": "https://api.hostmonit.com/get_optimization_ip",
       "count": 15,
-      "added": 0,
+      "added": 9,
       "cloudflare_count": 15
     },
     {
       "name": "VPS789",
       "url": "https://vps789.com/openApi/cfIpApi",
       "count": 20,
-      "added": 12,
+      "added": 10,
       "cloudflare_count": 20
     }
   ],
-  "total": 12931,
-  "cloudflare_total": 380,
+  "total": 12943,
+  "cloudflare_total": 392,
   "by_port": {
-    "443": 380
+    "443": 392
   },
   "by_region": {
     "US": 285,
-    "XX": 76,
+    "XX": 83,
+    "CF": 12,
     "SG": 10,
-    "CF": 7,
     "DE": 2
   }
 }
