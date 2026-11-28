@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T10:10:07+00:00",
+  "updated": "2026-11-28T11:10:14+00:00",
   "sources": [
     {
       "name": "CM(zip.cm.edu.kg)",
@@ -82,7 +82,7 @@
       "name": "ipdb.api bestcf",
       "url": "https://ipdb.api.030101.xyz/?type=bestcf",
       "count": 10,
-      "added": 0,
+      "added": 10,
       "cloudflare_count": 10
     },
     {
@@ -100,14 +100,14 @@
       "cloudflare_count": 20
     }
   ],
-  "total": 12615,
-  "cloudflare_total": 382,
+  "total": 12625,
+  "cloudflare_total": 392,
   "by_port": {
-    "443": 382
+    "443": 392
   },
   "by_region": {
     "US": 264,
-    "XX": 79,
+    "XX": 89,
     "SG": 20,
     "CF": 10,
     "NL": 8,
